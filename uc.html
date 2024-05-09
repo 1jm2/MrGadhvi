@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Countdown landing page Bootstrap template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/countdown/3-0/css/style.default.12db26d6.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/countdown/3-0/css/custom.0a822280.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="https://d19m59y37dris4.cloudfront.net/countdown/3-0/img/favicon.png">
+  </head>
+  <body>
+    <section class="page-holder position-relative d-flex justify-content-between flex-column" style="background: url(https://d19m59y37dris4.cloudfront.net/countdown/3-0/img/beach.175c40e4.jpg)">
+      <div class="overlay"></div>
+      <div class="container position-relative z-index-20 pt-3">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item"><a class="social-link social-link-twitter" href="https://telegram.me/mrjaylo"><i class="fab fa-telegram"></i></a></li>
+          <li class="list-inline-item"><a class="social-link social-link-instagram" href="https://instagram.com/mr_gadhvii"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="container text-center text-white position-relative mt-4 mb-5">
+        <h1 class="text-shadow mb-5 text-uppercase">Coming soon !</h1>
+        <p class="h3 text-shadow text-uppercase">We are still tweaking few details, stay tuned!</p>
+        <div class="countdown mt-5" id="countdown">
+         
+        </div>
+      </div>
+      <div class="container text-white text-center z-index-20">
+        <p class="h3 mb-4 text-shadow fw-normal">Join our mailing list and we will let you know all the news!</p>
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <form class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center">
+              <div class="input-group">
+                <input class="form-control" id="inlineFormInputName2" type="email" placeholder="JaneDoe@example.com">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="py-4 w-100 text-sm text-white z-index-20 position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 text-center text-sm-start">
+              <p>&copy;2022 Jaydev Gadhvi co. Ltd</p>
+            </div>
+
+        </div>
+      </footer>
+    </section>
+    <button class="btn btn-primary btn-sm d-none d-lg-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#style-switch" id="style-switch-button"><i class="fa fa-cog fa-2x"></i></button>
+    <div class="collapse" id="style-switch">
+      <h5>Select theme colour</h5>
+      <form class="mb-3">
+        <select class="form-select mb-3" name="colour" id="colour">
+          <option value="">select colour variant</option>
+          <option value="css/style.default.12db26d6.css">red</option>
+          <option value="css/style.pink.6c9ec43b.css">pink</option>
+          <option value="css/style.green.1cca95d5.css">green</option>
+          <option value="css/style.violet.8df960a4.css">violet</option>
+          <option value="css/style.sea.9cb1241b.css">sea</option>
+          <option value="css/style.blue.a3ab06e9.css">blue</option>
+        </select>
+      </form>
+      <p><img class="img-fluid" src="https://d19m59y37dris4.cloudfront.net/countdown/3-0/img/template-mac.e1286699.png" alt=""></p>
+      <p class="text-muted text-small">Stylesheet switching is done via JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
+    </div>
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/countdown/3-0/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/countdown/3-0/vendor/timezz/timezz.js"></script>
+    <script src="js/js-cookie.fa93e889.js"> </script>
+    <script src="js/demo.46a865b6.js"> </script>
+    <script src="js/theme.0a7a5c28.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      
+          // we set it one year from now
+          const oneYearfromNow = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
+      
+          countDown(oneYearfromNow, '#countdown')
+      });
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
